@@ -1,0 +1,142 @@
+{
+
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+
+  "type": "AdaptiveCard",
+
+  "version": "1.0",
+
+  "body": [
+
+    {
+
+      "type": "ColumnSet",
+
+      "columns": [
+
+        {
+
+          "type": "Column",
+
+          "width": "auto",
+
+          "items": [
+
+            {
+
+              "type": "Image",
+
+              "url": "IMAGE HERE",
+
+              "size": "Small"
+
+            }
+
+          ]
+
+        },
+
+        {
+
+          "type": "Column",
+
+          "width": "stretch",
+
+          "items": [
+
+            {
+
+              "type": "TextBlock",
+
+              "text": "You can choose to look for a specific work order by ID or any assigned work orders after the date you choose.",
+
+              "wrap": true
+
+            }
+
+          ]
+
+        }
+
+      ]
+
+    },
+
+    {
+
+      "type": "Input.Toggle",
+
+      "id": "toggleID",
+
+      "title": "Search by Work Order Request ID",
+
+      "value": "false"
+
+    },
+
+    {
+
+      "type": "Input.Text",
+
+      "id": "workOrderId",
+
+      "placeholder": "Enter Work Order Request ID",
+
+      "label": "Work Order Request ID:",
+
+      "isRequired": false
+
+    },
+
+    {
+
+      "type": "Input.Toggle",
+
+      "id": "toggleDate",
+
+      "title": "Search by Date",
+
+      "value": "false"
+
+    },
+
+    {
+
+      "type": "TextBlock",
+
+      "text": "Date Input"
+
+    },
+
+    {
+
+      "type": "Input.Date",
+
+      "id": "date",
+
+      "placeholder": "Enter a date",
+
+      "value": "",
+
+      "separator": true,
+
+      "isRequired": false
+
+    }
+
+  ],
+
+  "actions": [
+
+    {
+
+      "type": "Action.Submit",
+
+      "title": "Submit"
+
+    }
+
+  ]
+
+}
+
